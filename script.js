@@ -1,4 +1,4 @@
-alert('connected')
+console.log('connected')
 
 const cities = [
     {name:'LA', population: '250'},
@@ -65,3 +65,22 @@ const totalPopulation = cities.reduce((currentpopulation, cities)=>{
 console.log(totalPopulation)
 
 // includes-method
+
+function great(firstName, lastName){
+    console.log(`Goodmorning ${firstName} ${lastName[0]}`)
+}
+
+great('Peter', 'Tri');
+
+ const speak = function(nameOne, nameTwo){
+     console.log(`Goodnight ${nameOne} ${nameTwo}`)
+ }
+
+ speak('Peter', 'Tri');
+
+
+ const person = function(nameA= 'Peter', nameB = 'Tri'){
+     console.log(`hey there ${nameA} ${nameB}`)
+ }
+
+ person();
